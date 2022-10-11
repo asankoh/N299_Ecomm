@@ -1,0 +1,66 @@
+#blog{
+    border-top: 1px dotted lightgray ;
+    height: 100%;
+    font-family: PTReg;
+
+    h2{
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 20px 0;
+
+    }
+
+    .rowTwo{
+        width: 1200px;
+        height: 580px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: row;
+
+
+        .boxOne, .boxTwo, .boxThree{
+            width: 350px;
+            height: 500px;
+            margin-left: 50px;
+            background-color: white;
+
+            img{
+                width: 350px;
+                height: 300px;
+            }
+
+            .blogTitle{
+                padding: 5px 20px;
+                font-size: 21px;
+            }
+
+            .blogSubtext{
+                padding-left: 20px;
+
+            }
+
+            .blogBtn{
+                width: 100px;
+                height: 30px;
+                background-color: lightblue;
+                position: relative;
+                left: 120px;
+                top: 15px;
+                border: none;
+            }
+
+        }
+    }
+}
+
+@media only all and (max-width: 980px){
+    #blog{
+        padding: 0 30px;
+        .rowTwo{
+            width: auto;
+            overflow: auto;
+            padding: 10px;
+        }        
+    }
+}

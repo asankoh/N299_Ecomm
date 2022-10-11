@@ -1,0 +1,87 @@
+#products{
+    height: 100%;
+    font-family: PTReg;
+
+
+    h2{
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 40px 0;
+
+    }
+
+    .rowOne{
+        width: 1200px;
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+
+
+        .boxOne, .boxTwo, .boxThree, .boxFour{
+            width: 300px;
+            height: 325px;
+            border-left: 1px dotted grey;
+
+            .cartBtn{
+                width: 100px;
+                height: 30px;
+                background-color: lightblue;
+                position: relative;
+                left: 95px;
+                border: none;
+            }
+
+            img{
+                width: 200px;
+                height: 200px;
+                position: relative;
+                left: 50px;
+            }
+
+            img:hover{
+                transform: scale(1.1);
+                transition: 1s ease;
+                }
+
+            .title{
+                padding-top: 20px;
+                text-align: center;
+                font-size: 16px;
+            }
+
+            .pastPrice{
+                font-style: bold;
+                text-decoration: line-through;
+                text-align: center;
+            }
+
+            .price{
+                color: red;
+                font-style: bold;
+                text-align: center;
+            }
+        }
+
+        
+    }
+
+    .link{
+        text-align: center;
+        margin-top: 100px;
+        text-decoration: underline;
+    }
+}
+
+@media only all and (max-width: 980px){
+    #products{
+        .rowOne{
+            width: auto;
+            overflow: auto;
+        }
+        
+
+
+        
+    }
+}

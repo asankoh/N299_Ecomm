@@ -1,0 +1,56 @@
+#home{
+    background-color: green;
+    height: 100%;
+    font-family: PTReg;
+
+
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-image: linear-gradient(rgb(88,124,131,0.5), rgb(88,124,131,0.5)), url(../img/clothing-heroTwo.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h2{
+            padding: 30px;
+            margin-bottom: 300px;
+            font-size: 64px;
+            letter-spacing: 5px;
+        }
+        button{
+            position: relative;
+            right: 1220px;
+            width: 180px;
+            height: 50px;
+            border-radius: 30px;
+            background-color: lightblue;
+            border: none;
+            color: white;
+        }
+         p{
+            position: relative;
+            right: 1080px;
+            bottom: 50px;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
+
+@media only all and (max-width: 980px){
+    #home{
+    .hero{
+          h2, p{
+            padding: 10px;
+            width: 500px;
+            margin: 0 auto;
+          }
+            
+  
+            
+        }
+    }
+}

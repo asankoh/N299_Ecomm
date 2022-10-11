@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: PTBold;
+  src: url(../css/fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: PTReg;
+  src: url(../css/fonts/PTSerif-Regular.ttf);
+}
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+nav img {
+  height: 60px;
+  width: 100px;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 50px;
+}
+nav .searchbar {
+  width: 20%;
+  height: 40px;
+  background: url(../img/search.png);
+  padding: 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 5px;
+  border: none;
+  padding-left: 50px;
+  box-shadow: 5px 5px 5px #888888;
+}
+nav i {
+  padding: 30px;
+  font-size: 24px;
+}
+
+@media only all and (max-width: 980px) {
+  nav {
+    padding: 0 30px;
+  }
+  nav a {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+#home {
+  background-color: green;
+  height: 100%;
+  font-family: PTReg;
+}
+#home .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.5), rgba(88, 124, 131, 0.5)), url(../img/clothing-heroTwo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#home .hero h2 {
+  padding: 30px;
+  margin-bottom: 300px;
+  font-size: 64px;
+  letter-spacing: 5px;
+}
+#home .hero button {
+  position: relative;
+  right: 1220px;
+  width: 180px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: lightblue;
+  border: none;
+  color: white;
+}
+#home .hero p {
+  position: relative;
+  right: 1080px;
+  bottom: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media only all and (max-width: 980px) {
+  #home .hero h2, #home .hero p {
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+#products {
+  height: 100%;
+  font-family: PTReg;
+}
+#products h2 {
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 40px 0;
+}
+#products .rowOne {
+  width: 1200px;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+}
+#products .rowOne .boxOne, #products .rowOne .boxTwo, #products .rowOne .boxThree, #products .rowOne .boxFour {
+  width: 300px;
+  height: 325px;
+  border-left: 1px dotted grey;
+}
+#products .rowOne .boxOne .cartBtn, #products .rowOne .boxTwo .cartBtn, #products .rowOne .boxThree .cartBtn, #products .rowOne .boxFour .cartBtn {
+  width: 100px;
+  height: 30px;
+  background-color: lightblue;
+  position: relative;
+  left: 95px;
+  border: none;
+}
+#products .rowOne .boxOne img, #products .rowOne .boxTwo img, #products .rowOne .boxThree img, #products .rowOne .boxFour img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 50px;
+}
+#products .rowOne .boxOne img:hover, #products .rowOne .boxTwo img:hover, #products .rowOne .boxThree img:hover, #products .rowOne .boxFour img:hover {
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+#products .rowOne .boxOne .title, #products .rowOne .boxTwo .title, #products .rowOne .boxThree .title, #products .rowOne .boxFour .title {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+#products .rowOne .boxOne .pastPrice, #products .rowOne .boxTwo .pastPrice, #products .rowOne .boxThree .pastPrice, #products .rowOne .boxFour .pastPrice {
+  font-style: bold;
+  text-decoration: line-through;
+  text-align: center;
+}
+#products .rowOne .boxOne .price, #products .rowOne .boxTwo .price, #products .rowOne .boxThree .price, #products .rowOne .boxFour .price {
+  color: red;
+  font-style: bold;
+  text-align: center;
+}
+#products .link {
+  text-align: center;
+  margin-top: 100px;
+  text-decoration: underline;
+}
+
+@media only all and (max-width: 980px) {
+  #products .rowOne {
+    width: auto;
+    overflow: auto;
+  }
+}
+#about {
+  height: 100%;
+  border-top: 1px dotted lightgray;
+  font-family: PTReg;
+}
+#about h2 {
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 50px 0;
+}
+#about .aboutInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .aboutInfo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  position: relative;
+  left: 200px;
+}
+#about .aboutInfo .owner {
+  position: relative;
+  top: 180px;
+  right: 240px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#about .aboutInfo p {
+  position: relative;
+  right: 350px;
+  width: 700px;
+  font-size: 16px;
+  white-space: pre-line;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  #about .aboutInfo p {
+    font-size: 11px;
+    width: auto;
+    margin: auto;
+    overflow: auto;
+  }
+}
+#blog {
+  border-top: 1px dotted lightgray;
+  height: 100%;
+  font-family: PTReg;
+}
+#blog h2 {
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px 0;
+}
+#blog .rowTwo {
+  width: 1200px;
+  height: 580px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+}
+#blog .rowTwo .boxOne, #blog .rowTwo .boxTwo, #blog .rowTwo .boxThree {
+  width: 350px;
+  height: 500px;
+  margin-left: 50px;
+  background-color: white;
+}
+#blog .rowTwo .boxOne img, #blog .rowTwo .boxTwo img, #blog .rowTwo .boxThree img {
+  width: 350px;
+  height: 300px;
+}
+#blog .rowTwo .boxOne .blogTitle, #blog .rowTwo .boxTwo .blogTitle, #blog .rowTwo .boxThree .blogTitle {
+  padding: 5px 20px;
+  font-size: 21px;
+}
+#blog .rowTwo .boxOne .blogSubtext, #blog .rowTwo .boxTwo .blogSubtext, #blog .rowTwo .boxThree .blogSubtext {
+  padding-left: 20px;
+}
+#blog .rowTwo .boxOne .blogBtn, #blog .rowTwo .boxTwo .blogBtn, #blog .rowTwo .boxThree .blogBtn {
+  width: 100px;
+  height: 30px;
+  background-color: lightblue;
+  position: relative;
+  left: 120px;
+  top: 15px;
+  border: none;
+}
+
+@media only all and (max-width: 980px) {
+  #blog {
+    padding: 0 30px;
+  }
+  #blog .rowTwo {
+    width: auto;
+    overflow: auto;
+    padding: 10px;
+  }
+}
+#contact {
+  height: 100%;
+  border-top: 1px dotted lightgray;
+  font-family: PTReg;
+}
+#contact .contactInfo {
+  margin: 90px auto;
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+}
+#contact .contactInfo h2 {
+  padding-top: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+#contact .contactInfo .text-field-one {
+  margin: 20px;
+  width: 400px;
+  padding: 10px;
+  outline: none;
+  border: solid 2px #000;
+}
+#contact .messageBox {
+  min-width: 400px;
+  margin: 20px;
+  padding: 10px;
+  height: 120px;
+  border: solid 2px #000;
+}
+#contact .submitBtn {
+  margin: 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 45px;
+}
+
+/*# sourceMappingURL=styles.css.map */
